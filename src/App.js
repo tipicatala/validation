@@ -41,10 +41,11 @@ class App extends Component {
         document.getElementsByTagName('p')[0].style.color = 'white';
       }
     }
+    else{
+      this.setState({text: 'form is not valid'});
+      document.getElementsByTagName('p')[0].style.color = 'red';
+    }
     
-
-   
-
   }
 
   text=()=>{
